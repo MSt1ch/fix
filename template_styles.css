@@ -87,7 +87,9 @@ footer{height:432px; margin:-174px 0 0 0;}
 .total_price_bottom{display:inline-block; display:none; font-size:22px;}
 	.total_price_bottom span{margin:0 0 0 10px;}
 
-
+.services_element:nth-child(8) > div p{
+	margin-top: -50px;
+}
 
 /* 
                                                                  ŒŽˆ‹œ€Ÿ ‚…‘’Š€
@@ -108,6 +110,10 @@ footer{height:432px; margin:-174px 0 0 0;}
 	.last_work_center{
 		height: 800px;
 	}
+
+	a.social_block:first-child {
+    margin-right: 10px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -118,8 +124,8 @@ footer{height:432px; margin:-174px 0 0 0;}
 	
 	.last_work_center .reviews_sertificates .review .prev_text{float: none; width: 100%;}
 	
-	header nav{float:none;}
-header nav ul li{float:none; height:35px; width:100%!important; border: none;}
+	header nav{float:none; height: auto!important}
+header nav ul li{float:none; width:100%!important; border: none;}
 header nav ul li.active{background:#FF4747;}
 	header nav ul li.active a{color:#fff;}
 header nav ul li a{display: block; line-height:100%; padding:10px 0; height:initial;}
@@ -154,12 +160,27 @@ nav ul {display:none;}
 	.about_company {padding: 10px;}
 	.about_company_center > div p{font-size: 16px;}
 	.customer_reviews{display: none;}
+	
+	.submenu{
+		width: 100%;
+		position: relative;
+	}
+	.services_element:nth-child(8) > div p {
+		margin-top: 0;
+	}
+	header nav ul{
+		display: none;
+	}
 }
+	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.services_section_block {
     margin: 0 0 20px 0;
+}
+.contact_info .contact_phone a:nth-child(6){
+	padding-left: 0;
 }
 .services_section_block{margin:0 0 20px 0;}
 .services_section_block > div.three_block{display:inline; border-top:none;}
@@ -247,7 +268,7 @@ nav ul {display:none;}
 
 .services{padding:30px 0 0 0;}
 	/*Žòçûâ è ñåðòèôèêàòû*/
-	.last_work_center {margin: 0, height: auto;}
+	.last_work_center {margin: 0, height: 800px;}
 	.last_work_center .reviews_sertificates {width: 100%; border-right: none; padding: 0; font-size: 25px; height: 40%; margin-bottom: 40px;}
 	.last_work_center h2 {text-align: center;     margin: 15px 0 15px 0; font-size: 20px;}
 	.last_work_center .reviews_sertificates .cert{margin-bottom: 10px;}
@@ -267,7 +288,7 @@ nav ul {display:none;}
     /* top: 50px; */
     top: -35px;
     left: 0;
-    bottom: 0px;
+    bottom: 10%;
     right: 0;}
 	.btn_detail_news{     margin: 0 0 0 25%;}
 	
@@ -295,12 +316,12 @@ nav ul {display:none;}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.calculator {
-    padding: 0 15px;
-}
-.total_price {
-    display: none !important;
-}
+		.calculator {
+	    padding: 0 15px;
+	}
+	.total_price {
+	    display: none !important;
+	}
 	.calculator table tbody td{font-size:14px;}
 .calculator table thead tr{font-size:14px;}
 .calculator h1{font-size:22px;}
@@ -353,7 +374,7 @@ nav ul {display:none;}
 	
 	/*Žòçûâ è ñåðòèôèêàòû*/
 	.last_work_center {margin: 0}
-	.last_work_center .reviews_sertificates {width: 100%; border-right: none; padding: 0; font-size: 25px; height: 100%; margin-bottom: 40px;}
+	.last_work_center .reviews_sertificates {width: 100%; border-right: none; padding: 0; font-size: 25px; height: 40%; margin-bottom: 40px;}
 	.last_work_center h2 {text-align: center;     margin: 15px 0 15px 0; font-size: 20px;}
 	.last_work_center .reviews_sertificates .cert{margin-bottom: 10px;}
 	.last_work_center .reviews_sertificates .cert img{margin: 0; cursor: auto; margin-right: 10px;}
@@ -372,7 +393,7 @@ nav ul {display:none;}
     /* top: 50px; */
     top: 0;
     left: 0;
-    bottom: 0px;
+    bottom: 20%;
     right: 0;}
 	.btn_detail_news{     margin: 0 0 0 25%;}
 	
@@ -468,7 +489,7 @@ nav ul {display:none;}
     /* top: 50px; */
     top: -40px;
     left: 0;
-    bottom: 0px;
+    bottom: 20%;
     right: 0;}
 	.btn_detail_news{     margin: 0 0 0 15%;}
 	
@@ -560,6 +581,9 @@ nav ul {display:none;}
    .header_contact{
 	   display: block;
    }
+   header nav ul{
+		display: block!important;
+	}
 }
 
  /* Large Devices, Wide Screens */
