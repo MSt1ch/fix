@@ -1,0 +1,22 @@
+/* Start:/bitrix/templates/site_black/styles.css?1501859539215*/
+li.menu_1 {
+    width: 8%;
+}
+
+li.menu_2 {
+    width: 8%;
+}
+
+li.menu_3 {
+    width: 23%;
+}
+
+li.menu_6 {
+    width: 16%;
+}
+
+img.fl-left{
+    width:330px;
+    float: left;
+    padding-right: 20px;
+}
