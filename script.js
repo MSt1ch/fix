@@ -189,6 +189,22 @@ $(pull).on('click', function(e) {
 	menu.slideToggle();
 });	
 
+var touchHover = function() {
+    $('[data-hover]').click(function(e){
+        e.preventDefault();
+        var $this = $(this);
+        var onHover = $this.attr('data-hover');
+        var linkHref = $this.attr('href');
+        if (linkHref && $this.hasClass(onHover)) {
+            location.href = linkHref;
+            return false;
+        }
+        $this.toggleClass(onHover);
+    });
+};
+touchHover();
+
+
 // /* фиксированное поле с калькулятором */		
 // var a = document.querySelector('.calculator .total_price'), b = null;  // селектор блока, который нужно закрепить
 // if(a){
